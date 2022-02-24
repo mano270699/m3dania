@@ -87,16 +87,16 @@ class _HomeScreenState extends State<HomeScreen> {
                       icon: Icon(Icons.shopping_cart),
                       padding: EdgeInsets.only(right: 30.0),
                       onPressed: () {
-                        /*var token = CacheHelper.getData(key: 'token');
+                        var token = CacheHelper.getData(key: 'token');
                         if (token == null) {
                           print("no token : $token");
                           showToast(
                               msg: 'You arn\'t auth ', background: Colors.red);
 
                           navigateAndFinish(context, LoginScreen());
-                        } else {*/
-                        Navigator.pushNamed(context, cartPage);
-                        // }
+                        } else {
+                          Navigator.pushNamed(context, cartPage);
+                        }
                       }),
                 ),
               ),
