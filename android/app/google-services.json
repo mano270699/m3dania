@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "601288207379",
+    "project_id": "m3dania-d63e6",
+    "storage_bucket": "m3dania-d63e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601288207379:android:7728b7b4a53808fc5ba3e6",
+        "android_client_info": {
+          "package_name": "com.example.m3dania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601288207379-6vbglnubqbjlimji4thuqp8djjdiebpi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.m3dania",
+            "certificate_hash": "cfa425216f0b69aec64f47e53f4c021f0cf6cd74"
+          }
+        },
+        {
+          "client_id": "601288207379-60v4qhqoudl3qiub2cn78ci31tr8f205.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoWL1iptYi7qQjdk8y6zCZogiNpzbAB_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601288207379-60v4qhqoudl3qiub2cn78ci31tr8f205.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

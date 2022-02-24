@@ -1,0 +1,50 @@
+name: m3dania
+description: A new Flutter project.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  bloc: ^7.0.0
+  cupertino_icons: ^1.0.2
+  dio: ^4.0.0
+  easy_localization: ^3.0.0
+  firebase_auth: ^3.1.2
+  firebase_core: ^1.7.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^7.3.0
+  flutter_conditional_rendering: ^2.0.0
+  flutter_signin_button: ^2.0.0
+  flutter_svg: any
+  fluttertoast: ^8.0.8
+  pin_code_fields: ^7.3.0
+  shared_preferences: ^2.0.5
+  shimmer: ^2.0.0
+  splash_screen_view: ^3.0.0
+  url_launcher: ^6.0.10
+  badges: ^2.0.2
+  date_picker_timeline: ^1.2.3
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/translation/
+
+  fonts:
+    - family: Iconly-Broken
+      fonts:
+        - asset: assets/fonts/icons.ttf
+    - family: Shamel
+      fonts:
+        - asset: assets/fonts/FF Shamel Family Sans One Book.ttf
+        - asset: assets/fonts/FFShamelFamily-SansOneBold.ttf
