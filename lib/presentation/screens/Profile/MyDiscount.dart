@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
-class CopounsScreen extends StatelessWidget {
-  const CopounsScreen({Key? key}) : super(key: key);
+class MyDiscount extends StatelessWidget {
+  const MyDiscount({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('App.myDiscount'.tr()),
+      ),
       body: Center(
           child: Text(
         'Comming soon',

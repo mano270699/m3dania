@@ -4,6 +4,8 @@ import 'package:m3dania/constants/components/components.dart';
 import 'package:m3dania/presentation/screens/Cart/orderDetails/payment_Method.dart';
 import 'package:m3dania/presentation/screens/Cart/orderDetails/select_deliveryTime.dart';
 
+import '../../address/add_address.dart';
+
 class OrderDetails extends StatelessWidget {
   OrderDetails({Key? key}) : super(key: key);
   var codeController = TextEditingController();
@@ -23,7 +25,11 @@ class OrderDetails extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: defaultButton(
-                  raidus: 5, text: 'App.newAddress'.tr(), function: () {}),
+                  raidus: 5,
+                  text: 'App.newAddress'.tr(),
+                  function: () {
+                    navigateTo(context, AddNewAddress());
+                  }),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),

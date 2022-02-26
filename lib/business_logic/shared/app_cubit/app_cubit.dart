@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../data/model/Cart_model.dart';
 import '../../../presentation/screens/Cart/orderDetails/order_details_screen.dart';
+import '../../../presentation/screens/Copouns/copouns_screen.dart';
 import '../../../presentation/screens/MyOrders/myorder_screen.dart';
 import '../../../presentation/screens/Notification/notification_screen.dart';
 import '../../../presentation/screens/Profile/profile_screen.dart';
@@ -22,7 +23,7 @@ class AppCubit extends Cubit<AppStates> {
 
   List<Widget> screens = [
     HomeScreen(),
-    OrderDetails(),
+    CopounsScreen(),
     NotificationsScreen(),
     MyOrdersScreen(),
     ProfileScreen(),

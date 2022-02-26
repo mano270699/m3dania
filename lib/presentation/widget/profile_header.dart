@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class ProfileHeader extends StatelessWidget {
   const ProfileHeader({Key? key}) : super(key: key);
@@ -10,11 +11,11 @@ class ProfileHeader extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: h / 4,
+          height: h / 4.2,
           child: ClipRRect(
             borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(20),
-                bottomRight: Radius.circular(20)),
+                bottomLeft: Radius.circular(10),
+                bottomRight: Radius.circular(10)),
             child: Image(
               width: double.infinity,
               image: AssetImage('assets/images/plpl.jpg'),
@@ -32,12 +33,15 @@ class ProfileHeader extends StatelessWidget {
     var w = MediaQuery.of(context).size.width;
     return Positioned(
       child: Padding(
-        padding: const EdgeInsetsDirectional.only(start: 15, end: 15),
+        padding: const EdgeInsetsDirectional.only(
+          start: 15,
+          end: 15,
+        ),
         child: Container(
-          margin: EdgeInsets.only(top: 50),
+          margin: EdgeInsets.only(top: 40),
           child: Stack(children: [
             Container(
-              margin: EdgeInsets.only(top: 50),
+              margin: EdgeInsets.only(top: 30),
               height: h * 0.19,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -85,7 +89,7 @@ class ProfileHeader extends StatelessWidget {
                         minWidth: 40,
                         color: Colors.blue,
                         child: Text(
-                          'تعديل',
+                          'App.editprofile'.tr(),
                           style: TextStyle(color: Colors.white),
                         ),
                       )

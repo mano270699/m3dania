@@ -61,6 +61,7 @@ class _MyOrdersScreenState extends State<MyOrdersScreen> {
                 alignment: MainAxisAlignment.center,
                 children: <Widget>[
                   defaultButton(
+                      textSize: 12,
                       textColor: textColor1,
                       text: 'App.new'.tr(),
                       function: () {
@@ -81,6 +82,7 @@ class _MyOrdersScreenState extends State<MyOrdersScreen> {
                       width: 100,
                       color: selectColorFirstB),
                   defaultButton(
+                      textSize: 12,
                       textColor: textColor2,
                       text: 'App.Delivery'.tr(),
                       function: () {
@@ -100,6 +102,7 @@ class _MyOrdersScreenState extends State<MyOrdersScreen> {
                       width: 100,
                       color: selectColorSecondB),
                   defaultButton(
+                      textSize: 12,
                       text: 'App.delivered'.tr(),
                       textColor: textColor3,
                       function: () {
@@ -348,6 +351,7 @@ class _MyOrdersScreenState extends State<MyOrdersScreen> {
     required String text,
     required Function()? function,
     Color textColor = Colors.white,
+    double textSize = 14,
   }) =>
       Container(
         width: width,
@@ -365,6 +369,7 @@ class _MyOrdersScreenState extends State<MyOrdersScreen> {
           child: Text(
             text.toUpperCase(),
             style: TextStyle(
+              fontSize: textSize,
               fontFamily: 'Shamel',
               color: textColor,
               fontWeight: FontWeight.bold,

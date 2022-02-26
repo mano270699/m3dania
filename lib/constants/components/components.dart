@@ -184,7 +184,11 @@ Widget settingsItem({
 }) =>
     Padding(
       padding: const EdgeInsetsDirectional.only(
-          start: 20, end: 20, bottom: 5, top: 5),
+        start: 20,
+        end: 20,
+        bottom: 5,
+        top: 1.5,
+      ),
       child: Container(
         color: Colors.white,
         height: 60,
