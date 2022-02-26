@@ -5,6 +5,7 @@ import '../../../business_logic/shared/app_cubit/app_cubit.dart';
 import '../../../business_logic/shared/app_cubit/app_states.dart';
 import '../../../constants/components/components.dart';
 import '../../../data/model/Cart_model.dart';
+import 'orderDetails/order_details_screen.dart';
 
 class CartScreen extends StatefulWidget {
   CartScreen({Key? key}) : super(key: key);
@@ -119,8 +120,14 @@ class _CartScreenState extends State<CartScreen> {
                           ],
                           color: Colors.white,
                         ),
-                        child:
-                            defaultButton(text: 'شراء الان ', function: () {})),
+                        child: defaultButton(
+                            text: '',
+                            function: () {
+                              navigateTo(
+                                context,
+                                OrderDetails(),
+                              );
+                            })),
                   ),
                 ],
               ),
